@@ -32,32 +32,7 @@ const About: React.FC = () => {
 
   return (
     <section id={AboutStyle.About}  className="h-[120vh] w-full bg-[#11121A] flex flex-col ">
-  <div className="w-full h-full flex flex-col justify-center sm:justify-center sm:flex sm:items-center">
-      
-     <style jsx>{
-       `
-       section#About::after{
-         content:"",
-         position:absoulte;
-         width:100%;
-         height:15%;
-         background-color: #191a27;
-         z-index: 0;
-         clip-path: polygon(50% , 60% , 0 0 , 100% , 0);
-       }      
-       
-       @media only screen and (min-width:640px){
-         section#About::after{
-           height:30%,
-           clip-path:polygon(50% , 96% , 0 0 , 100% , 0)
-         }
-       }
-
-
-       `
-     }
-       </style> 
-      
+  <div className="w-full h-full flex flex-col justify-center sm:justify-center sm:flex sm:items-center">      
       <div className="pt-4 h-full flex flex-col justify-evenly align-center  sm:flex-row ">
         <div className="w-full  text-center sm:w-1/4 sm:h-full sm:flex sm:justify-center sm:items-center">
           <h1 className="font-['Montserrat'] text-[#fff] text-4xl pt-3 sm:text-5xl">
