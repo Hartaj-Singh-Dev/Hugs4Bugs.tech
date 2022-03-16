@@ -2,13 +2,12 @@
 Hugs For Bugs CTF Website
 
 * TypeScript
-* React
+* Next.js
 * Tailwind CSS
 * Three.js 
 * GSAP
+* Framer Motion
 
-
-Soon Will Gonna Switch to Next.js or Svelete for Blogs
 <hr>
 
 ## Active Maintainers
