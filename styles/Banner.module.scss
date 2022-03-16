@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
+div.HomepageCont{
+	// height: 80vh;
+	// width: 100%;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: end;
+	// align-items: center;
+	// background-color: #191a27;
+	
+	h1#headingbanner {
+          text-shadow: 0 0 15px rgba(192, 219, 255, 0.623), 0 0 22px rgb(65 120 255 / 24%);
+		span{
+			text-shadow: none;
+		}
+	}
+
+
+	// img.Typingheading{
+	// 	width: 100%;
+	// }
+
+	// 	div.homeHeadTxt {
+	// 	// display: flex;
+	// 	// width: 100%;
+	// 	// justify-content: center;
+	// 	// flex-wrap: wrap;
+	// 	// h1{
+	// 	// 	text-align: center;
+	// 	// font-family: "Ubuntu Mono";
+	// 	// // font-size: 4vw;
+	// 	// span{
+	// 	// 	// background:-webkit-linear-gradient(120deg,#1a4e8f,#64a8fa);
+	// 	// 	// -webkit-background-clip: text;
+	// 	// 	// -webkit-text-fill-color: transparent;
+	// 	// }
+	// 	// }
+	// }
+	
+}
+
+// @media only screen and (min-width:640px) {
+// 	div.HomepageCont{
+// 		height: 100vh;
+// 	}
+// }
