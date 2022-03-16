@@ -9,7 +9,6 @@ const nextConfig = {
   images:{
     domains:["ctftime.org"]
   },
- distDir:"build" 
 }
 
 module.exports = nextConfig
