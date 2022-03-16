@@ -9,7 +9,7 @@ const nextConfig = {
   images:{
     domains:["ctftime.org"]
   },
-  reactStrictMode:false
+ distDir:"build" 
 }
 
 module.exports = nextConfig
