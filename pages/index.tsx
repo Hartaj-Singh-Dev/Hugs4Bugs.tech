@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="max-w-full w-full">
       <Head>
         <meta name="robots" content="index , follow" />
         <meta charSet="UTF-8" />

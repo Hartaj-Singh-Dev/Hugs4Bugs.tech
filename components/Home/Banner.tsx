@@ -49,7 +49,7 @@ const banner: React.FC = () => {
     >
       <div className=" text-center flex w-full justify-center sm:items-end flex-wrap flex-col sm:flex-row">
       
-        <h1 id="headingbanner" className="text-6xl font-['Inter'] font-extrabold text-[#ffffff] sm:text-[7rem] sm:text-extrabold ">Segmentation <span className="bg-clip-text text-transparent bg-gradient-to-tl from-[#1a4e8f] to-[#64a8fa] " >Fault</span></h1>
+        <h1 id="headingbanner" className="text-5xl font-['Inter'] font-extrabold text-[#ffffff] sm:text-[7rem] sm:text-extrabold ">Segmentation <span className="bg-clip-text text-transparent bg-gradient-to-tl from-[#1a4e8f] to-[#64a8fa] " >Fault</span></h1>
         <style jsx>
         {`
          h1{
@@ -64,7 +64,7 @@ const banner: React.FC = () => {
         <img className="w-full h-8 sm:h-10" src="https://readme-typing-svg.herokuapp.com?color=%23337BD4&size=60&vCenter=true&height=30&width=230&lines=+........" alt="" />
       </div>
 
-    <div className="modal3d mt-4 h-1/2 w-full sm:w-1/3 sm:h-1/2">
+    <div className="modal3d mt-4 h-1/2 w-full max-w-full sm:w-1/3 sm:h-1/2">
       {/* <Canvas style={{height:"500px" ,width:"500px"}} camera={{position: [-10,-10,860] , fov:6}}>
         <Lights/>
         <Suspense fallback={null}>
@@ -72,7 +72,7 @@ const banner: React.FC = () => {
           </Suspense>
        
       </Canvas> </div>  */}
-       <NoSsr className="w-full h-full">
+       <NoSsr className=" max-w-full w-full h-full">
  <HackerRoom/>
        </NoSsr>
         {/* <Three/> */}
