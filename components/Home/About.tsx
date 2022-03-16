@@ -83,7 +83,7 @@ const About: React.FC = () => {
         </div>
       </div>
       <div className="w-full h-1/4  flex justify-center  p-4 sm:h-1/2 sm:hidden ">
-        <img src="http://localhost:3000/aboutpage.svg" alt="" className="h-auto w-full max-w-full " />
+        <img src="https://hugs4-bugs-tech.vercel.app/aboutpage.svg" alt="" className="h-auto w-full max-w-full " />
       </div> 
     </div> 
     </section>
