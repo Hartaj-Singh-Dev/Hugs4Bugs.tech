@@ -1,4 +1,4 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import {marked} from "marked"
 import React from 'react';
 import fs from 'fs';
@@ -18,8 +18,22 @@ export const getStaticPaths: GetStaticPaths = async (context) =>{
 		fallback:false,
 	}
 }
+interface ArticleMeta {
+    title?: string;
+    metaTitle?:string;
+    date?: string;
+    ReadTime?: string
+    metaDesc?: string;
+    socialImage?: string;
+    tags?: Array<string>;
+}
 
-const PostPage= ({frontmatter , content}) => {
+interface postPageProps {
+	frontmatter: ArticleMeta
+	content: string
+}
+
+const PostPage:NextPage<postPageProps>  = ({frontmatter , content}) => {
   return (
 	 <>
 	 <section className='w-screen mt-20 flex justify-center items-center'>
@@ -38,8 +52,8 @@ const PostPage= ({frontmatter , content}) => {
 }
           
 
-export const getStaticProps: GetStaticProps = async ({params:{slug}}) =>{
-	
+export const getStaticProps: GetStaticProps = async (context) =>{
+	const slug: string = context.params?.slug as string
 	const filename = fs.readFileSync(`Posts/${slug}.md` ,'utf-8')
 	const {data: frontmatter , content} = matter(filename)
 	return{
