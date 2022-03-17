@@ -55,7 +55,7 @@ import Image from 'next/image';
               <Link href="/team">Team</Link>
           </li>
           <li  className='mx-2 px-1 cursor-pointer text-white md:text-lg opacity-75 hover:opacity-100' >
-          <Link href="/blog">Blog</Link> 
+          <Link href="/blogs">Blog</Link> 
           </li>
           <li  className='mx-2 px-1 cursor-pointer text-white md:text-lg opacity-75 hover:opacity-100' >
            
@@ -92,7 +92,7 @@ import Image from 'next/image';
           </div>
           <div className="h-[2.5px] w-[80%] bg-[#fffffffd]"></div> 
           <div className="text-white  cursor-pointer w-full px-3 text-lg hover:bg-[#22538f]">
-            <Link href="/blog">Blogs</Link>
+            <Link href="/blogs">Blogs</Link>
           </div>
           <div className="h-[2px] w-[80%] bg-[#fffffff5]"></div>
           <div className="text-white cursor-pointer w-full px-3 text-lg hover:bg-[#22538f]">
