@@ -29,7 +29,7 @@ const BlogPost: NextPage<IProps | any> = ({article , slug}) => {
 	return(
 		<>
 	      <Link href={`/${slug}`}>
-             <div className="hover:scale-95  cursor-pointer w-5/6 bg-[#191a27] flex flex-col justify-evenly items-center border-b-2 min-h-1/3  border-opacity-10  mt-10 sm:w-3/4 md:h-[20rem] sm:max-h-1/6 md:flex-row  md:mt-20">
+             <div className="hover:scale-95  cursor-pointer w-5/6 bg-[#191a27] flex flex-col justify-evenly items-center  min-h-1/3  border-opacity-10  mt-10 sm:w-3/4 md:h-[20rem] sm:max-h-1/6 md:flex-row  md:mt-20">
 		<div className="w-full md:w-1/3  h-2/5 md:h-5/6">
 			<img src={article.socialImage} alt="" className="w-full h-full object-cover rounded-xl" />
 		</div>

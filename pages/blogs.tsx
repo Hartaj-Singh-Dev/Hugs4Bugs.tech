@@ -33,7 +33,7 @@ const Blog: NextPage<Iprops | any> = ({ posts }) => {
       
 
 
-  <motion.main transition={{ type: 'linear' }} initial={{ opacity: 0, x: -200, y: 0 }} animate={{opacity: 1, x: 0, y: 0}} exit={{ opacity: 0, x: 0, y: -100 }}>
+  <motion.main transition={{ type: 'linear' }} initial={{ opacity: 0, x: -200, y: 0 }} animate={{opacity: 1, x: 0, y: 0}} exit={{ opacity: 0, x: 0, y: -200 }}>
     <section className="min-h-screen bg-[#191a27] flex flex-col items-center justify-end ">
         <div className="w-full text-center mt-28">
           <h1 className="font-['Ubuntu'] text-extrabold text-5xl text-white">
@@ -43,9 +43,9 @@ const Blog: NextPage<Iprops | any> = ({ posts }) => {
 
         <div className="w-full px-2 flex flex-col justify-evenly items-center">
           {posts.map((post: PostDataTypes, index:number) => {
-		  console.log(post)
-           return <BlogPost key={index} slug={post.slug}  article={post.frontmatter} />
-	})}
+           
+           return ( <><BlogPost key={index} slug={post.slug}  article={post.frontmatter} />  <div key={index} className="w-1/2 h-[1.5px] bg-white bg-opacity-75"></div></>)
+         	})}
 	 
 
         </div>
