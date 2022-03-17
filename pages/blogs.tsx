@@ -44,7 +44,8 @@ const Blog: NextPage<Iprops | any> = ({ posts }) => {
         <div className="w-full px-2 flex flex-col justify-evenly items-center">
           {posts.map((post: PostDataTypes, index:number) => {
            
-           return ( <><BlogPost key={index} slug={post.slug}  article={post.frontmatter} />  <div key={index} className="w-1/2 h-[1.5px] bg-white bg-opacity-75"></div></>)
+           return ( <><BlogPost key={post.slug} slug={post.slug}  article={post.frontmatter} />  <div key={index} className="w-1/2 h-[1.5px] bg-white bg-opacity-75"></div></>)
+
          	})}
 	 
 

@@ -35,6 +35,7 @@ import Image from 'next/image';
            w-20"
           src="https://ctftime.org/media/cache/8d/37/8d3746b689ba3c133cd3599d898b6a4b.png"
           alt="H4B"
+          loading='eager'
         />  
        
       </Link>

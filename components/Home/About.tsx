@@ -40,7 +40,7 @@ const About: React.FC = () => {
           </h1>
         </div>
         <div className=" flex justify-center w-full items-center  sm:w-1/2 overflow-hidden">
-          <p ref={introductionP} className="text-[#d3d3d3] font-['Poppins'] px-5 sm:px-4 text-left text-lg sm:text-xl">
+          <p ref={introductionP} className="text-[#d3d3d3] prose prose-p: font-['Poppins'] px-5 sm:px-4 text-left text-lg sm:text-xl">
             HugsForBugs is an international{" "}
             <span className="underline decoration-red-600">community </span>{" "}
             where we compete in{" "}
