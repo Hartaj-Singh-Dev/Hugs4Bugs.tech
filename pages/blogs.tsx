@@ -1,51 +1,56 @@
 import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
-import Image from "next/image";
-import Link from "next/link";
-import path from "path";
-import Script from "next/script";
 import BlogPost from "../components/BlogPost";
-import { GetStaticProps } from "next";
+import { GetStaticProps  , NextPage} from "next";
+import {motion} from "framer-motion"
 
+interface ArticleMeta {
+    title?: string;
+    metaTitle?:string;
+    date?: string;
+    ReadTime?: string
+    metaDesc?: string;
+    socialImage?: string;
+    tags?: Array<string>;
+}
 interface PostDataTypes {
   slug: string;
-  frontmatter: object;
+  frontmatter?: ArticleMeta[];
 }
 
-const Blog = ({ posts }: Array) => {
-  console.log(posts);
+
+
+interface Iprops {
+	posts:  ArticleMeta[]
+}
+
+
+const Blog: NextPage<Iprops | any> = ({ posts }) => {
+  
   return (
     <>
-      {/* <Script src="https://utteranc.es/client.js"/> */}
-      <section className="h-screen bg-[#191a27] flex flex-col items-center justify-end ">
-        <div className="w-full text-center">
-          <h1 className="font-['Inter'] text-extrabold text-3xl text-white">
+      
+
+
+  <motion.main transition={{ type: 'linear' }} initial={{ opacity: 0, x: -200, y: 0 }} animate={{opacity: 1, x: 0, y: 0}} exit={{ opacity: 0, x: 0, y: -100 }}>
+    <section className="min-h-screen bg-[#191a27] flex flex-col items-center justify-end ">
+        <div className="w-full text-center mt-28">
+          <h1 className="font-['Ubuntu'] text-extrabold text-5xl text-white">
             Blogs
           </h1>
         </div>
 
         <div className="w-full px-2 flex flex-col justify-evenly items-center">
-          {/* {props.Posts.map((item:PostDataTypes)=>{
-			// <BlogPost key={item.slug} slug={item.slug} Data={item.frontmatter}/>
-		 	
-		
-		})} */}
-          {posts.map((post, index) => {
-            <BlogPost key={index} slug={post.slug} Data={post.frontmatter} />;
-          })}
-        </div>
+          {posts.map((post: PostDataTypes, index:number) => {
+		  console.log(post)
+           return <BlogPost key={index} slug={post.slug}  article={post.frontmatter} />
+	})}
+	 
 
-        <div className="utterances" style={{ height: "100rem", width: "100%" }}>
-          <iframe
-            className="utterances-frame"
-            title="Comments"
-            scrolling="no"
-            src="https://utteranc.es/utterances.html?src=https%3A%2F%2Futteranc.es%2Fclient.js&repo=Hartaj-Singh-Dev%2FHugs4Bugs.tech&issue-term=pathname&label=Comment&theme=github-dark&crossorigin=anonymous&async=&url=http%3A%2F%2Flocalhost%3A3000%2Fblogs&origin=http%3A%2F%2Flocalhost%3A3000&pathname=blogs&title=&description=&og%3Atitle=&session="
-            loading="lazy"
-          ></iframe>
         </div>
-      </section>
+      </section> 
+   </motion.main> 
     </>
   );
 };
@@ -72,6 +77,3 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 export default Blog;
-function posts(posts: any) {
-  throw new Error("Function not implemented.");
-}
