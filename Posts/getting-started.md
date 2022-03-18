@@ -7,6 +7,11 @@ ReadTime: '10min'
 date: '2021-09-22'
 tags:
   - nextjs
+  - React
+  - MERN
+  - Javascript
+  - Blogs
+  - Articles
 ---
 
 

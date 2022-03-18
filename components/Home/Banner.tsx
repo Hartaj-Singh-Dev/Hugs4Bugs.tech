@@ -61,7 +61,7 @@ const banner: React.FC = () => {
           }  
         `} 
       </style>
-        <img className="w-full h-8 sm:h-10" src="https://readme-typing-svg.herokuapp.com?color=%23337BD4&size=60&vCenter=true&height=30&width=230&lines=+........" alt="" />
+        <img  loading="lazy" className="w-full h-8 sm:h-10" src="https://readme-typing-svg.herokuapp.com?color=%23337BD4&size=60&vCenter=true&height=30&width=230&lines=+........" alt="" />
       </div>
 
     <div className="modal3d mt-4 h-1/2 w-full max-w-full sm:w-1/3 sm:h-1/2">

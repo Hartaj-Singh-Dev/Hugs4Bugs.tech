@@ -80,23 +80,23 @@ import Image from 'next/image';
                  <i className="fa-solid fa-2x fa-bars text-[#337BD4]"></i>
           </button>
          {openDrop && (
-   <div ref={dropRef} className='absolute z-30 h-56 w-32 top-9 right-0 bg-[#337Bd4]' >
+   <div ref={dropRef} className='absolute z-30 h-56 w-36 top-9 right-0 bg-[#337Bd4]' >
        <div className="flex h-full w-full flex-col justify-evenly items-center font-mono font-extrabold sm:hidden">
-          <div className='w-full  cursor-pointer text-white text-lg px-3 hover:bg-[#22538f] ' >
+          <div className="w-full  cursor-pointer text-white text-2xl px-3 font-['Inconsolata'] hover:bg-[#22538f] " >
               <Link href="/#about">
                 About
                 </Link>   
           </div>
-          <div className="h-[2px] w-[80%] bg-[#fffffffd]"></div>
-          <div className="text-white cursor-pointer text-lg w-full px-3  hover:bg-[#22538f]" >
+          <div className="h-[1.5px] w-[75%]  opacity-75 bg-[#ffffff]"></div>
+          <div className="text-white cursor-pointer text-2xl w-full px-3 font-['Inconsolata']  hover:bg-[#22538f]" >
            <Link href="/team">Team </Link> 
           </div>
-          <div className="h-[2.5px] w-[80%] bg-[#fffffffd]"></div> 
-          <div className="text-white  cursor-pointer w-full px-3 text-lg hover:bg-[#22538f]">
+          <div className="h-[1.5px] w-[75%] opacity-75 bg-[#ffffff]"></div> 
+          <div className="text-white  cursor-pointer w-full px-3 font-['Inconsolata'] text-2xl hover:bg-[#22538f]">
             <Link href="/blogs">Blogs</Link>
           </div>
-          <div className="h-[2px] w-[80%] bg-[#fffffff5]"></div>
-          <div className="text-white cursor-pointer w-full px-3 text-lg hover:bg-[#22538f]">
+          <div className="h-[1.5px] w-[75%] opacity-75 bg-[#ffffff]"></div>
+          <div className="text-white cursor-pointer w-full px-3 font-['Inconsolata'] text-2xl hover:bg-[#22538f]">
             <a href="#" onClick={(e)=>{
             window.location.href="mailto:hugsforbugs@protonmail.com";
             e.preventDefault()
