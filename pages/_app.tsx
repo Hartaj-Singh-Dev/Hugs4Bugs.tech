@@ -4,7 +4,7 @@ import Footer from "../components/Footer"
 import ProgressBar from '@badrap/bar-of-progress'
 import Router from 'next/router'
 import type { AppProps } from 'next/app'
-import { AnimatePresence , AnimateSharedLayout, motion} from "framer-motion"
+import { AnimatePresence } from "framer-motion"
 
 const progress = new ProgressBar({
   size:2,
