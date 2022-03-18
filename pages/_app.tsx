@@ -1,8 +1,21 @@
 import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Footer from "../components/Footer"
+import ProgressBar from '@badrap/bar-of-progress'
+import Router from 'next/router'
 import type { AppProps } from 'next/app'
 import { AnimatePresence , AnimateSharedLayout, motion} from "framer-motion"
+
+const progress = new ProgressBar({
+  size:2,
+  color:"#ffff",
+  className:"bar-of-progrss",
+  delay:0,
+})
+
+Router.events.on("routeChangeStart" , progress.start)
+Router.events.on("routeChangeComplete", progress.finish)
+Router.events.on("routeChangeError",progress.finish)
 
 function MyApp({ Component, pageProps , router }: AppProps) {
   return(

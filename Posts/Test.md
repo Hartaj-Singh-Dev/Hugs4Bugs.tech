@@ -3,7 +3,7 @@
 title: 'Test Story md'
 metaTitle: 'Next.js page options and how they work'
 metaDesc: 'How to use pages in Next.js exphohgduhogajpsgioloring the options lorem ispum dhgabsdkjnlkasviohajskfdbiasjovnpahosbvnsadavo  ojnasbabsojglkndsibjnsklhobsnlahogjsodbvljahobnsa d'
-socialImage: images/H4BBlogImageCompressed.jpg
+socialImage: /images/H4BBlogImageCompressed.jpg
 date: '2021-09-22'
 ReadTime: '10min'
 tags:

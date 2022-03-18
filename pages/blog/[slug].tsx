@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import {marked} from "marked"
+import Link from "next/link"
 import React from 'react';
 import fs from 'fs';
 import matter from 'gray-matter';
@@ -51,22 +52,24 @@ const PostPage:NextPage<postPageProps>  = ({frontmatter , content}) => {
 	},[])
 
   return (
-	 <>
+	 <React.Fragment>
 	 <Head>
 		 <title>{frontmatter.metaTitle}</title>
 		 <meta name="description" content={frontmatter.metaDesc} />
 		 //@ts-ignore
 		 <meta name="Keywords" content={frontmatter.tags?.map((tag)=>{return tag as String}).toString()} />
 	 </Head>
-	 <section className='w-full mt-24 flex flex-col justify-center items-center'>
-		 <article className=" w-5/6 max-w-5/6 sm:w-1/2">
-			 <img src={frontmatter.socialImage} alt="" className="w-full object-cover h-40"/>
-			 <h1 className="text-white font-['Ubuntu'] my-2 text-3xl sm:text-6xl md:text-8xl font-extrabold">{frontmatter.title}</h1> 
-			  <h2 className='text-white opacity-80 text-md my-2' >{frontmatter.date}</h2>
-			  <h2>{frontmatter.ReadTime}</h2>
-			  <div className="prose mt-10 font-['Inconsolata'] font-light opacity-80 text-xl leading-8 text-white" dangerouslySetInnerHTML={{ __html : marked(content)}}></div>
+	 <section className='w-full mt-24 flex flex-col justify-evenly  items-center'>
+		 <article className=" md:mt-10 w-5/6 max-w-5/6 sm:w-4/6">
+			 <img src={frontmatter.socialImage} loading="lazy" alt="" className="w-full object-cover h-60"/>
+			 <h1 className="text-white font-['Ubuntu'] my-6  prose max-w-none text-4xl sm:text-6xl md:text-7xl font-extrabold">{frontmatter.title}</h1> 
+			  <h2 className='text-white opacity-80 text-md md:text-lg my-2' >Date:- {frontmatter.date}</h2>
+			  <h2 className="text-white ">{frontmatter.ReadTime}</h2>
+			  <div className="prose md:prose-xl prose-headings:text-white prose-stone max-w-none mt-10 font-['Inconsolata'] font-light opacity-80 text-xl leading-8 text-white" dangerouslySetInnerHTML={{ __html : marked(content)}}></div>
 
 		 </article>
+
+	 <Link href={"/blogs"}><h2 className="cursor-pointer text-[#337BD4] font-bold mt-24 text-xl  underline ">&#60;- Get Back ../</h2></Link>  
 
  <div className='h-[1.5px] w-[85%] mt-10 sm:w-[80%] md:w-[65%] bg-white opacity-80'></div>
                <section className=' mt-7 w-[90%] sm:w-full justify-items-center items-center overflow-scroll' id='comment'>
@@ -79,7 +82,7 @@ const PostPage:NextPage<postPageProps>  = ({frontmatter , content}) => {
 	 </section>
 	
 
-	 </>
+	 </React.Fragment>
   )
 }
           
