@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps , router }: AppProps) {
   return(
     <>
  <Navbar/>
- <AnimatePresence onExitComplete={() => window.scrollTo(0, 0)} exitBeforeEnter initial={false}>
+ <AnimatePresence onExitComplete={() => window.scrollTo({top:0 , behavior:"smooth"})} exitBeforeEnter initial={false}>
   <Component {...pageProps} key={router.pathname}/>
   </AnimatePresence>
   <Footer/>
