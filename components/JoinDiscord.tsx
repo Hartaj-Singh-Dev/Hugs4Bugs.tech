@@ -12,7 +12,7 @@ const JoinDiscord: React.FC = () => {
   useEffect(()=>{
   const joinAnimation =  gsap.fromTo(JoinDiscordCont.current,{    
       duration:0.7,
-      y:100,
+      y:180,
       opacity:0
     },{
       y:0,

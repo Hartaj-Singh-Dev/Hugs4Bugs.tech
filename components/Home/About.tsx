@@ -15,7 +15,7 @@ const About: React.FC = () => {
 
   const introP = gsap.fromTo(introductionP.current,{
     opacity:0,
-    y:100,
+    y:180,
   },{
     opacity:1,
     duration:0.6 ,
