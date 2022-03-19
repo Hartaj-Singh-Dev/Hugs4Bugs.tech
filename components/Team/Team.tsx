@@ -5,7 +5,7 @@ import Profile from "./Profile";
 const Team: React.FC = () => {
   return (
     <>
-          <section className="w-full min-h-[340vh] sm:h-[230vh]  flex flex-col justify-start  bg-[#191a27]">
+          <section className="w-full min-h-[340vh] sm:min-h-[240vh]  flex flex-col justify-start  bg-[#191a27]">
               <div className="w-full mt-28 text-center p-2 ">
                 <h1 className="text-white font-['Inter'] text-5xl font-extrabold">Team</h1>
               </div>
