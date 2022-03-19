@@ -4,7 +4,9 @@ export default function Document() {
   return (
     <Html>
       <Head>
-	   
+	  <meta  name="twitter:site"  content="HugsforBugs"/> 
+    <meta property="og:site_name" content="HugsForBugs" />
+    <meta property="og:type" content="website" />
 	      <link rel='icon' type='image/svg+xml' href='/h4b.svg' />
                    <script src="https://kit.fontawesome.com/e20sdfsd9.js" crossOrigin="anonymous"></script>
                   {/* <script src="https://utteranc.es/client.js"

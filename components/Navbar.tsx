@@ -26,7 +26,7 @@ import Image from 'next/image';
   
   return (
 	  <>
-	   <nav className="w-full  z-20 items-center flex justify-between px-10 bg-[#0A0A0A] h-20 fixed top-0 bg-opacity-40  backdrop-blur-md ">
+	   <nav className="w-full  z-20 items-center flex justify-between px-10 sm:px-24 bg-[#0A0A0A] h-20 fixed top-0 bg-opacity-40  backdrop-blur-md ">
       <div> 
      <Link href="/" > 
      

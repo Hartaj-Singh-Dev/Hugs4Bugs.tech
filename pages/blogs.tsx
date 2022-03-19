@@ -2,6 +2,7 @@ import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import BlogPost from "../components/BlogPost";
+import Head from "next/head";
 import { GetStaticProps  , NextPage} from "next";
 import {motion} from "framer-motion"
 
@@ -30,7 +31,9 @@ const Blog: NextPage<Iprops | any> = ({ posts }) => {
   
   return (
     <>
-      
+     <Head>
+
+       </Head> 
 
 
   <motion.main transition={{ type: 'linear' }} initial={{ opacity: 0, x: -200, y: 0 }} animate={{opacity: 1, x: 0, y: 0}} exit={{ opacity: 0, x: 0, y: -200 }}>

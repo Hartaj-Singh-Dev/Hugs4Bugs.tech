@@ -59,9 +59,16 @@ const PostPage:NextPage<postPageProps>  = ({frontmatter , content}) => {
   return (
 	 <React.Fragment>
 	 <Head>
-		 <title>{frontmatter.metaTitle}</title>
+		 <title>{frontmatter.title}</title>
 		 <meta name="description" content={frontmatter.metaDesc} />
 		 //@ts-ignore
+		 <meta property="og:title" content={frontmatter.metaTitle} />
+		<meta property="og:description" content={frontmatter.metaDesc} /> 
+		<meta property="og:image"  content={`https://hugs4-bugs-tech.vercel.app${frontmatter.socialImage}`}/>
+		<meta name="twitter:card" content="summary_large_image"/>	
+		<meta name="twitter:image" content={`https://hugs4-bugs-tech.vercel.app${frontmatter.socialImage}`} />
+		<meta name="twitter:title" content={frontmatter.title}  />
+		<meta name="twitter:description" content={frontmatter.metaDesc} />
 		 <meta name="Keywords" content={frontmatter.tags?.map((tag)=>{return tag as String}).toString()} />
 	 </Head>
 	 <section className="w-full mt-24 flex justify-evenly ">
@@ -79,7 +86,7 @@ const PostPage:NextPage<postPageProps>  = ({frontmatter , content}) => {
 		 	</div>		
 
 		<div className="hover:brightness-90">
-		<Link href={`https://twitter.com/intent/tweet?url=https://hugs4-bugs-tech.vercel.app/${asPath}`}>
+		<Link href={`https://twitter.com/intent/tweet?url=https://hugs4-bugs-tech.vercel.app${asPath}`}>
 			 <i className="cursor-pointer fa-brands fa-twitter fa-2x text-[#1DA1F2]"></i>
 		</Link>
 		</div>	
