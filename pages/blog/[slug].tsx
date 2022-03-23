@@ -76,11 +76,11 @@ const PostPage:NextPage<postPageProps>  = ({frontmatter , content}) => {
 
 		 <article className="w-full flex md:w-[70%] flex-col justify-items-center items-center md:items-start">
 			 <div className='w-5/6 md:mt-10 sm:w-3/5 md:w-3/4'>
-		        <img src={frontmatter.socialImage} loading="lazy" alt="" className="w-full object-cover h-60"/>
-			 <h1 className="text-white font-['Ubuntu'] my-6  prose max-w-none text-4xl sm:text-6xl md:text-7xl font-extrabold">{frontmatter.title}</h1> 
+		        <img src={frontmatter.socialImage} loading="lazy" alt="" className="w-full object-cover h-60 md:h-96"/>
+			 <h1 className="text-white font-['Ubuntu_Mono'] my-6  prose max-w-none text-4xl sm:text-6xl md:text-7xl  font-extrabold">{frontmatter.title}</h1> 
 			  <h2 className='text-white opacity-80 text-md md:text-lg my-2' >Date:- {frontmatter.date}</h2>
 			  <h2 className="text-white ">{frontmatter.ReadTime}</h2>
-			  <div className="prose md:prose-xl prose-headings:text-white prose-stone max-w-none mt-10 font-['Inconsolata'] font-light opacity-80 text-xl leading-8 text-white" dangerouslySetInnerHTML={{ __html : marked(content)}}></div>
+			  <div className="prose md:prose-xl prose-headings:text-white prose-stone max-w-none mt-10 font-['Cabin'] font-light opacity-80 text-xl leading-8 text-white" dangerouslySetInnerHTML={{ __html : marked(content)}}></div>
 
 		 
 		 	</div>		

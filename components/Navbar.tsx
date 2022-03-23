@@ -41,7 +41,6 @@ import Image from 'next/image';
       </Link>
       </div>
 
-
       <div>
         <ul className="hidden sm:justify-evenly font-mono font-extrabold sm:flex">
           <li className="mx-2 px-1 cursor-pointer text-white md:text-lg opacity-75 hover:opacity-100" >
