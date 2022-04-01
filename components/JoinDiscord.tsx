@@ -36,7 +36,7 @@ const JoinDiscord: React.FC = () => {
           <h1 className="text-[#ffff] text-3xl sm:text-5xl font-['Inter'] font-extrabold">Join our Discord Community with 100+ Expert Hackers </h1>
         </div>
         <div className="w-9/12 sm:w-3/5  flex justify-center content-center text-center ">
-          <h2 className="text-[#ffff] text-lg sm:text-xl opacity-80">Get support in dedicated channels , explore new ideas and work in Team in CTF's</h2>
+          <h2 className="text-[#ffff] text-lg sm:text-xl opacity-80">Get support in dedicated channels , explore new ideas and team up for CTFs</h2>
         </div>
         <div className="w-[50%] h-[2.9rem] sm:w-[24%]  sm:h-14 ">
           <button className="w-full h-full bg-[#fff] rounded-xl hover:opacity-80">

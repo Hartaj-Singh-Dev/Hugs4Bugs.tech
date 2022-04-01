@@ -7,7 +7,7 @@ const team = () => {
   return (
 	 <>
 	 <Head>
-		<title>H4B | Team Page | 6 Leading Members of h4b community</title> 
+		<title>H4B | Team Page | 6 Leading Members of h4b community | International CTF Community</title> 
 		<meta name="description" content="This is list of Leading Members , who are Mentors and CTF player in HugsForBugs Community " />
 		<meta name="keywords" content="Casmpy , MrsMalware , Cat++ , Hartaj Singh , Fade , Nikk , abhishekydv , Team , Community " />
 		<meta charSet="UTF-8"/>

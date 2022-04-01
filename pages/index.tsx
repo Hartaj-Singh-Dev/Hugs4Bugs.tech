@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           name="description"
           content="HugsForBugs is an international community where we compete in CTFs and learn things together. We play around once or twice a month or so and aren't super hardcore. No one will expect you to stay up all night two nights in a row!"
         />
-        <title>H4B | Internatinal Community to participate in CTF&apos; </title>
+        <title>H4B | Internatinal Community to participate in CTF&apos; | International CTF Community</title>
       </Head>
 
      {/* <Navbar/> */}

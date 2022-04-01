@@ -32,7 +32,7 @@ const Blog: NextPage<Iprops | any> = ({ posts }) => {
   return (
     <>
      <Head>
-
+       <title> Blogs | Articles on Ethicial Hacking | International CTF Community </title>
        </Head> 
 
 
