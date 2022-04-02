@@ -66,6 +66,7 @@ const PostPage:NextPage<postPageProps>  = ({frontmatter , content}) => {
 		<meta property="og:description" content={frontmatter.metaDesc} /> 
 		<meta property="og:image"  content={`https://hugs4-bugs-tech.vercel.app${frontmatter.socialImage}`}/>
 		<meta name="twitter:card" content="summary_large_image"/>	
+		<meta name="twitter:url" content="https://hugs4-bugs-tech.vercel.app"/>
 		<meta name="twitter:image" content={`https://hugs4-bugs-tech.vercel.app${frontmatter.socialImage}`} />
 		<meta name="twitter:title" content={frontmatter.title}  />
 		<meta name="twitter:description" content={frontmatter.metaDesc} />
