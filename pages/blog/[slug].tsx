@@ -72,7 +72,7 @@ const PostPage:NextPage<postPageProps>  = ({frontmatter , content}) => {
 		<meta name="twitter:description" content={frontmatter.metaDesc} />
 		 <meta name="Keywords" content={frontmatter.tags?.map((tag)=>{return tag as String}).toString()} />
 	 </Head>
-	 <section className="w-full mt-24 flex justify-evenly ">
+	 <section className="transition ease-in-out delay-500 w-full mt-24 flex justify-evenly ">
 	 <Link href={"/blogs"}><h2 className="hidden md:block md:sticky md:top-40 md:left-8 cursor-pointer text-[#5790d6] font-bold mt-24 text-xl  underline underline-offset-0">&#60;- Get Back ../</h2></Link>  
 
 		 <article className="w-full flex md:w-[70%] flex-col justify-items-center items-center md:items-start">
