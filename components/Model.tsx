@@ -9,14 +9,17 @@ export const LoadGLTFModel = (
   const { recieveShadow, castShadow } = options;
   return new Promise((resolve, reject) => {
     const loader = new GLTFLoader();
-    const draco = new DRACOLoader()
-    draco.setDecoderPath("https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/libs/draco/")
-    loader.setDRACOLoader(draco)
+    const dracoLoad = new DRACOLoader()
+    // draco.setDecoderPath("https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/js/libs/draco/")
+    // loader.setDRACOLoader(draco)
+  
+    dracoLoad.setDecoderPath("https://www.gstatic.com/draco/v1/decoders/")
+    loader.setDRACOLoader(dracoLoad)
     loader.load(
       glbpath,
       (gltf) => {
         const obj = gltf.scene;
-        obj.name = " Hacker room ";
+        obj.name = "scene";
         obj.position.x = 0;
         obj.position.y = 0;
         obj.receiveShadow = recieveShadow;

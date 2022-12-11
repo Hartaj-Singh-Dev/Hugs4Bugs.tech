@@ -120,7 +120,7 @@ useEffect(()=>{
 	}
 
 
-} , [])
+},[])
 
  useEffect(()=>{
 	window.addEventListener("resize" , handleWindowResize , false)
