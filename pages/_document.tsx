@@ -9,6 +9,10 @@ export default function Document() {
     <meta property="og:type" content="website" />
 	      <link rel='icon' type='image/svg+xml' href='/h4b.svg' />
                    <script src="https://kit.fontawesome.com/e20sdfsd9.js" crossOrigin="anonymous"></script>
+                  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter:wght@700&family=Montserrat:wght@600&family=Poppins:wght@500&family=Ubuntu+Mono&family=Ubuntu&display=swap" rel="stylesheet"></link>
                   {/* <script src="https://utteranc.es/client.js"
         repo="Hartaj-Singh-Dev/Hugs4Bugs.tech"
         issue-term="pathname"
